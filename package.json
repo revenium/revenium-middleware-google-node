@@ -1,0 +1,28 @@
+{
+  "name": "monorepo",
+  "version": "0.0.1",
+  "description": "Revenium middleware for Google AI - monorepo containing @revenium/google-genai, @revenium/google-vertex, and @revenium/google-core packages",
+  "license": "MIT",
+  "private": true,
+  "author": "Revenium",
+  "type": "commonjs",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "strip:comments": "node ./scripts/strip-comments.js",
+    "test": "npm run test --workspaces",
+    "example:genai:basic": "npx tsx packages/google-genai/examples/basic.ts",
+    "example:genai:streaming": "npx tsx packages/google-genai/examples/streaming.ts",
+    "example:genai:embedding": "npx tsx packages/google-genai/examples/embedding.ts",
+    "example:vertex:basic": "npx tsx packages/google-vertex/examples/basic.ts",
+    "example:vertex:streaming": "npx tsx packages/google-vertex/examples/streaming.ts"
+  },
+  "devDependencies": {
+    "fast-glob": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,48 @@
+# Root level files
+package.json
+tsconfig.json
+.env.example
+.gitignore
+README.md
+LICENSE
+CHANGELOG.md
+CONTRIBUTING.md
+SECURITY.md
+CODE_OF_CONDUCT.md
+
+# Package: google-core
+packages/google-core/src/
+packages/google-core/dist/
+packages/google-core/package.json
+packages/google-core/tsconfig.json
+packages/google-core/README.md
+packages/google-core/LICENSE
+packages/google-core/CHANGELOG.md
+
+# Package: google-genai
+packages/google-genai/src/
+packages/google-genai/dist/
+packages/google-genai/examples/
+packages/google-genai/package.json
+packages/google-genai/tsconfig.json
+packages/google-genai/README.md
+packages/google-genai/LICENSE
+packages/google-genai/CHANGELOG.md
+
+# Package: google-vertex
+packages/google-vertex/src/
+packages/google-vertex/dist/
+packages/google-vertex/examples/
+packages/google-vertex/package.json
+packages/google-vertex/tsconfig.json
+packages/google-vertex/README.md
+packages/google-vertex/LICENSE
+packages/google-vertex/CHANGELOG.md
+
+# Scripts (if needed for builds)
+scripts/
+
+# Export scripts themselves (for reference)
+public-allowlist-node.txt
+export_public_repo_step_1.sh
+export_public_repo_step_2.sh

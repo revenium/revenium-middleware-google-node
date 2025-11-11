@@ -1,0 +1,45 @@
+{
+  "name": "@revenium/google-core",
+  "version": "0.1.2",
+  "description": "Core utilities for Revenium Google middleware packages",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "revenium",
+    "middleware",
+    "core",
+    "utilities",
+    "metering",
+    "tracking"
+  ],
+  "author": "Revenium",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/revenium/revenium-middleware-google-node.git"
+  },
+  "homepage": "https://github.com/revenium/revenium-middleware-google-node#readme",
+  "bugs": {
+    "url": "https://github.com/revenium/revenium-middleware-google-node/issues"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.2",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/google-core" },
+    { "path": "./packages/google-genai" },
+    { "path": "./packages/google-vertex" }
+  ]
+}
