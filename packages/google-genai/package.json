@@ -1,0 +1,50 @@
+{
+  "name": "@revenium/google-genai",
+  "version": "0.1.3",
+  "description": "Transparent TypeScript middleware for automatic Revenium usage tracking with Google AI (Gemini)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "examples/**/*",
+    "!examples/.env",
+    "!examples/**/*.json",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "google",
+    "gemini",
+    "google-ai",
+    "revenium",
+    "middleware",
+    "typescript",
+    "nodejs",
+    "usage-tracking",
+    "metering",
+    "ai"
+  ],
+  "author": "Revenium",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/revenium/revenium-middleware-google-node.git"
+  },
+  "homepage": "https://github.com/revenium/revenium-middleware-google-node#readme",
+  "bugs": {
+    "url": "https://github.com/revenium/revenium-middleware-google-node/issues"
+  },
+  "dependencies": {
+    "@google/genai": "^1.18.0",
+    "@revenium/google-core": "^0.1.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.6"
+  }
+}
